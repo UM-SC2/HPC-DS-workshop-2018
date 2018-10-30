@@ -11,7 +11,7 @@ from sklearn.datasets import fetch_mldata
 from sklearn.preprocessing import RobustScaler
 
 
-housing = pd.read_csv("./housing.data", delim_whitespace=True, header=-1)
+housing = pd.read_csv("./stanford_dl_ex/ex1/housing.data", delim_whitespace=True, header=-1)
 xhous = housing.iloc[:,:-1]
 xs = np.array(xhous)
 ### scaling is critical for the success of this algorithm with this dataset!
